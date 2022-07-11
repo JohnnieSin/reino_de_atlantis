@@ -9,46 +9,60 @@
     <title>Noticias</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <div class="header__logo"><a href="./index.html"><img width="100px" src="../assets/img/logo.png" alt=""></a></div>
-        <!--Barra de navegación-->
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="podcast.html">Podcast</a></li>
-                <li><a href="sobre_nosotros.html">Sobre Nosostros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <picture class="header__logo">
+            <a href="./index.html"><img class="header__img" src="../assets/img/logo.png" alt="logo-reino-de-atlantis"></a>
+         </picture>
+            <!--Barra de navegación-->
+         <nav class="header__navbar">
+            <ul class="menu">
+                 <li class="menu__item"><a class="menu__link" href="../index.html">Inicio</a></li>
+                 <li class="menu__item"><a class="menu__link" href="../views/noticias.html">Noticias</a></li>
+                 <li class="menu__item"><a class="menu__link" href="../views/podcast.html">Podcast</a></li>
+                 <li class="menu__item"><a class="menu__link" href="../views/sobre_nosotros.html">Sobre Nosostros</a></li>
+                 <li class="menu__item"><a class="menu__link" href="../views/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
-    </header>
+         </nav>
+     </header>
+<!-- Final del HEADER -->
+     <main class="portada">
+        <picture class="portada__img">
+        <img src="../assets/img/la_atlantida.jpg" alt="">
+        </picture>
+     </main>
     <!--Contenido-->
-    <section>
-        <h1>Noticias</h1>
-        <article>
-            <h2>Titulo de la noticia</h2>
-            <img width="500px" src="../assets/img/la_atlantida.jpg" alt="imagen-noticia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cupiditate eos eligendi voluptates
-                voluptas, temporibus alias dolorum nobis nulla animi, repellat magnam iste labore inventore obcaecati
-                explicabo esse incidunt quos.</p>
-        </article>
-    </section>
-     <!--Pie de página-->
-     <footer class="footer">
-        <div class="footer_eslogan">
-            <p>Eslogan</p>
+     <!--Contenido del sitio-->
+     <h1 class="titulo">Noticias</h1>
+     <section class="section__noticias">
+      <article class="caja">
+         <picture class="caja__noticia"><img src="../assets/img/dardevil.jpg" alt=""></picture>
+         <div class="caja__info">
+          <h2 class="caja__titulo">Titulo de la noticia</h2>
+          <p class="caja__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cupiditate eos eligendi voluptates
+          voluptas, temporibus alias dolorum nobis nulla animi, repellat magnam iste labore inventore obcaecati
+          explicabo esse incidunt quos.</p>
+         </div>
+      </article>
+     </section>
+    <!--Pie de página-->
+    <footer class="footer">
+        <div class="footer__flex">
+          <div class="footer_eslogan">
+             <p>Eslogan</p>
+         </div>
+         <div class="footer__img">
+             <a href="https://es-es.facebook.com/" target="_blank"><img width="30px" src="../assets/img/logo_fb.png" alt="FACEBOOK"></a>
+             <a href="https://twitter.com/?lang=es" target="_blank"><img width="30px" src="../assets/img/logo_tw.png" alt="TWITTER"></a>
+             <a href="https://www.instagram.com/" target="_blank"><img width="30px" src="../assets/img/logo_ig.png" alt="INSTAGRAM"></a>
+             <a href="https://web.whatsapp.com/" target="_blank"><img width="30px" src="../assets/img/logo_whatsapp.png" alt="WHATSAPP"></a>
+         </div>
         </div>
-        <div class="footer__img">
-            <a href="https://es-es.facebook.com/" target="_blank"><img width="30px" src="../assets/img/logo_fb.png" alt="FACEBOOK"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img width="30px" src="../assets/img/logo_tw.png" alt="TWITTER"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img width="30px" src="../assets/img/logo_ig.png" alt="INSTAGRAM"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img width="30px" src="../assets/img/logo_whatsapp.png" alt="WHATSAPP"></a>
-        </div>
-        <div class="footer__legales">
-            <p>Terminos y condiciones</p>
-            <p>©Todos los derechos reservados.</p>
-        </div>
-    </footer>
+         <div class="footer__legales">
+             <p>Terminos y condiciones</p>
+             <p>©Todos los derechos reservados.</p>
+         </div>
+     </footer>
 </body>
 
 </html>
