@@ -9,7 +9,7 @@ body {
 
 /*-----HEADER------*/
 
-.header{
+ .header{
     position: sticky;
     top: 20px;
 }
@@ -50,7 +50,7 @@ main {
 
 /*-------FOOTER------*/
 
-.footer {
+ .footer {
     background-color: darkgrey;
     background-size: cover;
     margin-top: 50px;
@@ -65,4 +65,3 @@ main {
 .footer p{
     display: inline;
 }
-
