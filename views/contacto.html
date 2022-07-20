@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,19 +15,35 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <picture class="header__logo">
-            <a href="./index.html"><img class="header__img" src="../assets/img/logo.png" alt="logo-reino-de-atlantis"></a>
-         </picture>
-            <!--Barra de navegación-->
-         <nav class="header__navbar">
-            <ul class="menu">
-                 <li class="menu__item"><a class="menu__link" href="../index.html">Inicio</a></li>
-                 <li class="menu__item"><a class="menu__link" href="../views/noticias.html">Noticias</a></li>
-                 <li class="menu__item"><a class="menu__link" href="../views/podcast.html">Podcast</a></li>
-                 <li class="menu__item"><a class="menu__link" href="../views/sobre_nosotros.html">Sobre Nosostros</a></li>
-                 <li class="menu__item"><a class="menu__link" href="../views/contacto.html">Contacto</a></li>
-            </ul>
-         </nav>
+        <nav class="navbar navbar-white bg-white navbar-expand-lg bg-light">
+            <div class="container-fluid d-flex">
+              <a class="navbar-brand" href="#">
+                <img src="../assets/img/logo.png" alt="" width="120" height="94">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" collapse navbar-collapse text-uppercase fs-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../views/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../views/podcast.html">Podcast</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../views/sobre_nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../views/contacto.html">Contacto</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </nav>
      </header>
 <!-- Final del HEADER -->
      <main class="portada">
@@ -36,16 +53,14 @@
      </main>
     <!--Contenido-->
 
-    <main class="contenedor">
-        <div class="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9471448309628!2d-3.700721284325207!3d40.4321692626239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288b429a124f%3A0xe21309161003f359!2sCalle%20de%20Luchana%2C%2033%2C%2028010%20Madrid!5e0!3m2!1ses!2ses!4v1654949800875!5m2!1ses!2ses"
-                width="700" height="365" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9473292387543!2d-3.7007212846674005!3d40.43216517936335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288b429a124f%3A0xe21309161003f359!2sCalle%20de%20Luchana%2C%2033%2C%2028010%20Madrid!5e0!3m2!1ses!2ses!4v1658333954270!5m2!1ses!2ses" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     
-    <form class="formulario" action="">
-        <fieldset>
+        <form class="col-lg-6 col-sm-12 formulario" action="">
+          <fieldset>
             <legend class="formulario__titulo">Contáctanos</legend>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
@@ -70,9 +85,10 @@
             <br>
         
             <input type="submit">
-        </fieldset>
+           </fieldset>
 
-    </form>
+        </form>
+      </div>
     </main>
     <!--Pie de página-->
     <footer class="footer">
@@ -92,6 +108,8 @@
              <p>©Todos los derechos reservados.</p>
          </div>
      </footer>
+         <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
