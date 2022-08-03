@@ -9,7 +9,6 @@
 @import "./componentes/header";
 @import "./componentes/main";
 @import "./componentes/footer";
-@import "./componentes/mediaqueries";
 
 /* Views */
 @import "./views/home";
@@ -17,3 +16,5 @@
 @import "./views/podcast";
 @import "./views/sobre_nosotros";
 @import "./views/contacto";
+
+@import "./componentes/mediaqueries";
