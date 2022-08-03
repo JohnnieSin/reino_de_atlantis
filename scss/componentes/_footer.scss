@@ -1,0 +1,25 @@
+/* Footer*/
+.footer {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #448a8a;
+    background-size: cover;
+    border: solid 2px black;
+   
+      &__flex {
+        display: flex;
+        justify-content: space-between; }
+  
+      &__eslogan {
+        font-size: 1.5em; }
+  
+      &__img {
+        display: flex;
+        max-width: 120px; }
+  
+      &__legales {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        margin-top: 5rem; }
+  }

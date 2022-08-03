@@ -1,0 +1,15 @@
+/* Main */
+.portada {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+  
+  &__img {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4; }
+  }
+  
+  .titulo {
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 3em; }

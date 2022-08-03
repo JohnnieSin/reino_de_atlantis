@@ -1,0 +1,28 @@
+/* Section */
+.section {
+   @include flex (row, center, none);    
+    gap: $spacing-medium;
+    padding: $spacing-xsmall;
+    flex-wrap: wrap; }
+  
+  .caja {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-medium;
+    flex: 1 1 clamp(200px, 30%, 300px); 
+  
+      &__img:hover {
+         width: 485px; }
+  
+      &__info {
+         @include flex (column, none, none);
+         padding: $spacing-medium;
+         padding-bottom: $spacing-medium; }
+  
+      &__titulo {
+         font-size: 1.80em; }
+  
+      &__texto {
+         margin-top: 0.3rem;
+         font-size: 1.5rem; }
+  }
