@@ -1,8 +1,14 @@
 /* Noticias */
 .section__noticias {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column; 
+
+  .caja__titulo {
+    font-weight: bold;
+    font-size: $headline-font;
+  }  
   
   .caja__noticia img {
     padding-left: 20px;
     max-width: 800px; }
+  }

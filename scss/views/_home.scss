@@ -20,9 +20,9 @@
          padding-bottom: $spacing-medium; }
   
       &__titulo {
-         font-size: 1.80em; }
+         font-size: $headline-font; }
   
       &__texto {
          margin-top: 0.3rem;
-         font-size: 1.5rem; }
+         font-size: $text-font; }
   }
