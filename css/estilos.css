@@ -220,6 +220,10 @@ img {
     padding-bottom: 0px; }
   .caja__img:hover {
     display: none; }
+  /* Página Noticias - MOBILE */
+  .caja__info {
+    padding-top: 0px;
+    padding-bottom: 20px; }
   /* Página Podcast - MOBILE */
   .contenido__podcast {
     grid-template-rows: repeat(4, 1fr); }
