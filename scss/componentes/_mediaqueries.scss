@@ -31,13 +31,19 @@
 .header {
     @include flex (column,space-between,stretch);
    }
-
 .menu {
     flex-direction: column;
     align-items: center; }
 .footer__legales {
     flex-direction: column;
     align-items: center; }
+.caja {
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+.caja__info {
+    padding-bottom: 0px;
+}
 .caja__img:hover {
     display: none; }
 
@@ -62,7 +68,7 @@
 /* Pagina contacto - MOBILE*/
 
 .contenedor {
-  grid-template-rows: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
     .mapa {
       grid-column: 1 / 5;
       grid-row: 1 / 2; }
